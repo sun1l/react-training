@@ -4,8 +4,10 @@
 import React from 'react';
 import { render } from 'react-dom';
 import Header from './components/header/Header';
+import List from './components/list/List';
+import data from '../api/userData';
 
 render(
-    <Header />,
+    <List data={data()} />,
   document.getElementById('root')
 );
